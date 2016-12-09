@@ -237,7 +237,7 @@ ul#nav li.current a { color: #F06000; }
 #resume {
    background: #fff;
    padding-top: 90px;
-   padding-bottom: 72px;
+   padding-bottom: 0px;
    overflow: hidden;
 }
 
@@ -286,9 +286,16 @@ ul#nav li.current a { color: #F06000; }
 
 #skills {
    background: #fff;
-   padding-top: 90px;
+   padding-top: 10px;
    padding-bottom: 72px;
    overflow: hidden;
+}
+
+#skills .header-col { padding-top: 9px; }
+#skills .main-col { padding-right: 10%; }
+#skills h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
 }
 
 #skills h1 {
@@ -296,10 +303,7 @@ ul#nav li.current a { color: #F06000; }
    text-transform: uppercase;
    letter-spacing: 1px;
 }
-#skills h1 span {
-   border-bottom: 3px solid #11ABB0;
-   padding-bottom: 6px;
-}
+
 .bars {
 	width: 95%;
 	float: left;
