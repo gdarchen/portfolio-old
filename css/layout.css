@@ -311,14 +311,14 @@ ul#nav li.current a { color: #F06000; }
 	text-align: left;
 }
 .bars .skills {
-  	margin-top: 36px;
+  	margin-top: 30px;
    list-style: none;
 }
 .bars li {
    position: relative;
-  	margin-bottom: 60px;
+  	margin-bottom: 50px;
   	background: #ccc;
-  	height: 42px;
+  	height: 30px;
   	border-radius: 3px;
 }
 .bars li em {
@@ -339,103 +339,81 @@ ul#nav li.current a { color: #F06000; }
    padding-right: 24px;
   	background: #313131;
    display: inline-block;
-  	height: 42px;
-   line-height: 42px;
+  	height: 30px;
+   line-height: 30px;
    border-radius: 3px 0 0 3px;
 }
 
-.latex {
-  	width: 80%;
-  	-moz-animation: latex 2s ease;
-  	-webkit-animation: latex 2s ease;
-}
-.matlab {
-  	width: 70%;
-  	-moz-animation: matlab 2s ease;
-  	-webkit-animation: matlab 2s ease;
-}
-.java {
-  	width: 85%;
-  	-moz-animation: java 2s ease;
-  	-webkit-animation: java 2s ease;
-}
-.technoWeb {
-  	width: 85%;
-  	-moz-animation: technoWeb 2s ease;
-  	-webkit-animation: technoWeb 2s ease;
-}
-.dev {
-  	width: 80%;
-  	-moz-animation: dev 2s ease;
-  	-webkit-animation: dev 2s ease;
-}
-.sql{
+
+.c65{
   	width: 65%;
-  	-moz-animation: sql 2s ease;
-  	-webkit-animation: sql 2s ease;
+  	-moz-animation: c65 2s ease;
+  	-webkit-animation: c65 2s ease;
 }
-.anglais{
+
+.c70{
+  	width: 70%;
+  	-moz-animation: c70 2s ease;
+  	-webkit-animation: c70 2s ease;
+}
+
+.c75{
   	width: 75%;
-  	-moz-animation: anglais 2s ease;
-  	-webkit-animation: anglais 2s ease;
+  	-moz-animation: c75 2s ease;
+  	-webkit-animation: c75 2s ease;
 }
 
-@-moz-keyframes latex {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
+.c80{
+  	width: 80%;
+  	-moz-animation: c80 2s ease;
+  	-webkit-animation: c80 2s ease;
 }
-@-moz-keyframes matlab {
-  0%   { width: 0px;  }
-  100% { width: 70%;  }
+
+.c85{
+  	width: 85%;
+  	-moz-animation: c85 2s ease;
+  	-webkit-animation: c85 2s ease;
 }
-@-moz-keyframes java {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
+
+.c90{
+  	width: 90%;
+  	-moz-animation: c90 2s ease;
+  	-webkit-animation: c90 2s ease;
 }
-@-moz-keyframes technoWeb {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
+
+.c95{
+  	width: 95%;
+  	-moz-animation: c95 2s ease;
+  	-webkit-animation: c95 2s ease;
 }
-@-moz-keyframes dev {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-moz-keyframes sql {
+
+@-webkit-keyframes c65 {
   0%   { width: 0px;  }
   100% { width: 65%;  }
 }
-@-moz-keyframes anglais {
-  0%   { width: 0px;  }
-  100% { width: 75%;  }
-}
-
-@-webkit-keyframes latex {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
-@-webkit-keyframes matlab {
+@-webkit-keyframes c70 {
   0%   { width: 0px;  }
   100% { width: 70%;  }
 }
-@-webkit-keyframes java {
+@-webkit-keyframes c75 {
   0%   { width: 0px;  }
-  100% { width: 85%;  }
+  100% { width: 75%;  }
 }
-@-webkit-keyframes technoWeb {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
-@-webkit-keyframes dev {
+@-webkit-keyframes c80 {
   0%   { width: 0px;  }
   100% { width: 80%;  }
 }
-@-webkit-keyframes sql {
+@-webkit-keyframes c85 {
   0%   { width: 0px;  }
-  100% { width: 65%;  }
+  100% { width: 85%;  }
 }
-@-webkit-keyframes anglais {
+@-webkit-keyframes c90 {
   0%   { width: 0px;  }
-  100% { width: 75%;  }
+  100% { width: 90%;  }
+}
+@-webkit-keyframes c95 {
+  0%   { width: 0px;  }
+  100% { width: 95%;  }
 }
 
 /* ------------------------------------------------------------------ */
