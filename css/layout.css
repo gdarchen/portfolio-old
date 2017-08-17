@@ -280,6 +280,11 @@ ul#nav li.current a { color: #11ABB0/*#F06000;*/ }
    margin-top: 6px;
 }
 
+div.twelve.columns{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /*----------------------------------------------*/
 /*	Skill Bars
 /*----------------------------------------------*/
@@ -538,6 +543,8 @@ ul#nav li.current a { color: #11ABB0/*#F06000;*/ }
 	font: 14px/24px 'opensans-regular', sans-serif;
    color: #A1A1A1;
    margin-bottom: 12px;
+   text-align: justify;
+   text-justify: inter-word;
 }
 .popup-modal .description-box .categories {
    font: 11px/21px 'opensans-light', sans-serif;
@@ -545,7 +552,8 @@ ul#nav li.current a { color: #11ABB0/*#F06000;*/ }
    text-transform: uppercase;
    letter-spacing: 2px;
    display: block;
-   text-align: left;
+   text-align: justify;
+   text-justify: inter-word;
 }
 .popup-modal .description-box .categories i {
    margin-right: 8px;

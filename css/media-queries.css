@@ -19,6 +19,15 @@
       margin: 0 auto 12px auto;
    }
 
+   .popup-modal .description-box .categories {
+      font: 11px/21px 'opensans-light', sans-serif;
+      color: #A1A1A1;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      display: block;
+      text-align: left;
+   }
+
 }
 
 /* screenwidth less than 900px
@@ -112,7 +121,7 @@
 	   width: 48px;
 		height: 48px;
 		text-align: left;
-		background-color: #CC5200;
+		background-color: #11ABB0;/*#CC5200;*/
 		position: relative;
       border: none;
       float: right;
@@ -234,6 +243,10 @@
    #resume h1 { letter-spacing: 3px; }
    #resume .main-col { padding-right: 30px; }
    #resume h3, #resume .info { text-align: center; }
+   #resume h5, #resume p {
+       text-align: justify;
+       text-justify: inter-word;
+   }
 
    .bars { width: 100%; }
 

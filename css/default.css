@@ -178,6 +178,11 @@ p.lead {
    margin-bottom: 18px;
 }
 
+p.main_description {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 /* for 'em' and 'strong' tags, font-size and line-height should be same with
 the body tag due to rendering problems in some browsers */
 em { font: 15px/30px 'opensans-italic', sans-serif; }
