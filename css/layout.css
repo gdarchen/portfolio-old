@@ -280,7 +280,7 @@ ul#nav li.current a { color: #11ABB0/*#F06000;*/ }
    margin-top: 6px;
 }
 
-div.twelve.columns{
+div.nine.columns.main-col>div.row.item>div.twelve.columns{
     text-align: justify;
     text-justify: inter-word;
 }
@@ -992,7 +992,7 @@ footer .social-links li {
     color: #F06000;
 }
 
-footer .social-links li:first-child { margin-left: 0; }
+footer .social-links li:first-child { margin-left: auto; }
 
 /* Go To Top Button */
 #go-top {
