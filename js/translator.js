@@ -8,7 +8,7 @@ function translate(language) {
 }
 
 $( document ).ready(function() {
-    //translate("french");
+    translate("french");
 
     $("#translate-french").on('click touchstart', function(){
         translate("french");
