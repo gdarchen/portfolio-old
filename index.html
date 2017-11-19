@@ -22,6 +22,8 @@
         <link rel="stylesheet" href="css/layout.css">
         <link rel="stylesheet" href="css/media-queries.css">
         <link rel="stylesheet" href="css/magnific-popup.css">
+        <link rel="stylesheet" href="css/custom.css">
+        
 
         <!-- Script
         ================================================== -->
@@ -39,29 +41,26 @@
         <header id="home">
 
             <nav id="nav-wrap">
-                <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Montrer la barre de naviguation</a>
-                <a class="mobile-btn" href="#" title="Hide navigation">Cacher la barre de naviguation</a>
+                <a class="mobile-btn" href="#nav-wrap" title="Show navigation" id="header-show-navigation"></a>
+                <a class="mobile-btn" href="#" title="Hide navigation" id="header-hide-navigation"></a>
 
                 <ul id="nav" class="nav">
-                    <li class="current"><a class="smoothscroll" href="#home">Accueil</a></li>
-                    <li><a class="smoothscroll" href="#about">À propos de moi</a></li>
-        	        <li><a class="smoothscroll" href="#resume">CV</a></li>
-                    <li><a class="smoothscroll" href="#skills">Mes compétences</a></li>
-                    <li><a class="smoothscroll" href="#portfolio">Réalisations</a></li>
+                    <li class="current"><a class="smoothscroll" id="header-home" href="#home"> </a></li>
+                    <li><a class="smoothscroll" id="header-about-me" href="#about"></a></li>
+        	        <li><a class="smoothscroll" id="header-cv" href="#resume"></a></li>
+                    <li><a class="smoothscroll" id="header-myskills" href="#skills"></a></li>
+                    <li><a class="smoothscroll" id="header-realisations"href="#portfolio"></a></li>
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <li><a href="index.html"><img src="images/fr.png" width="20" style="border:0.5px solid gray"></a></li>
-                    <li><a href="index-en.html"><img src="images/en.png" width="20" style="border:0.5px solid gray"></a></li>
-                    <li><a href="index-de.html"><img src="images/ger.png" width="20" style="border:0.5px solid gray"></a></li>
+                    <li class="language-selector"><img onclick="translate('french');" src="images/fr.png" width="20" style="border:0.5px solid gray"></li>
+                    <li class="language-selector"><img onclick="translate('english');" src="images/en.png" width="20" style="border:0.5px solid gray"></li>
+                    <li class="language-selector"><img onclick="translate('german');" src="images/ger.png" width="20" style="border:0.5px solid gray"></li>
                 </ul> <!-- end #nav -->
             </nav> <!-- end #nav-wrap -->
 
             <div class="row banner">
                 <div class="banner-text">
                     <h1 class="responsive-headline">Gautier Darchen</h1>
-                    <h3>
-                        Je suis un <span>élève-ingénieur</span> en <span>5ème année</span> à l'<span>INSA Rouen-Normandie</span>.
-                        J'étudie actuellement dans le département d'<span>Architecture des Systèmes d'Information</span>.
-                        Pour en apprendre plus sur moi, <a class="smoothscroll" href="#about">descendez cette page</a>.
+                    <h3 id="header-description">
                     </h3>
                     <hr />
                     <ul class="social">
@@ -88,29 +87,24 @@
                 </div>
 
                 <div class="nine columns main-col">
-                    <h2>À propos de moi</h2>
-                    <p class="main_description">
-                      Élève-ingénieur en 5ème année à l'INSA de Rouen, j'étudie dans la spécialité Architecture des Systèmes d'Informations.
-                      Je me passionne pour les nouvelles technologies et les enjeux qu'elles représentent dans notre société actuelle.
-                      J'apprécie particulièrement le <em>data mining</em> et le développement Web.
-                      <br/>
-                      Je recherche actuellement un <strong>stage ingénieur</strong> de 6 mois (de février à juillet 2018) dans le domaine du développement Web.
+                    <h2 id="about-aboutme"></h2>
+                    <p id="about-maindescription" class="main_description"> 
                     </p>
 
                     <div class="row">
 
                         <div class="columns contact-details">
-                            <h2>Contact</h2>
+                            <h2 id="about-contact"></h2>
                             <p class="address">
     					        <span>Gautier DARCHEN</span><br>
-    					        <span>06.59.20.92.40</span><br>
+    					        <span id="about-telephone"></span><br>
                                 <span><a href="mailto:darchen.gautier@gmail.com" class="lienMail">darchen.gautier@gmail.com</a></span>
     				        </p>
                         </div>
 
                        <div class="columns download">
                            <p>
-                               <a href="./res/CV_GautierDARCHEN_en.pdf" download class="button"><i class="fa fa-download"></i>Télécharger mon CV</a>
+                               <a href="./res/CV_GautierDARCHEN_en.pdf" download class="button"><i class="fa fa-download"></i><span id="about-cv"></span></a>
                            </p>
                        </div>
 
@@ -129,45 +123,45 @@
             <div class="row education">
 
                 <div class="three columns header-col">
-                    <h1><span>Formation</span></h1>
+                    <h1><span id="resume-formation"></span></h1>
                 </div>
 
                 <div class="nine columns main-col">
                     <div class="row item">
                         <div class="twelve columns">
-                             <h3>Stage de spécialité en Allemagne</h3>
-                             <h5>Développement de deux <b><em>plugins</em></b> pour le logiciel de CAO Allplan<sup>&reg;</sup> dans le domaine du BIM (<b><em>Building Information Modeling</em></b>)</h5>
-                             <p class="info">BIM<span style="font-family:verdana;">&amp;</span>CO - KiM GmbH (Saint-Wendel, Sarre, Allemagne)<span>&bull;</span> <em class="date">Juin - Août 2017</em></p>
+                             <h3 id="resume-specialtyinternship-title"></h3>
+                             <h5 id="resume-specialtyinternship-description"></h5>
+                             <p class="info" id="resume-specialtyinternship-placedate"></p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Chef de Projet Certifié ISO 9001:2015</h3>
-                            <h5>Refonte d'une application web de Gestion Electronique de Documents (équipe de 8 personnes)</h5>
-                            <p class="info">AEROW Solutions (avec INSA Rouen-Normandie, 76)<span>&bull;</span> <em class="date">2017</em></p>
+                            <h3 id="resume-pic-title"></h3>
+                            <h5 id="resume-pic-description"></h5>
+                            <p class="info" id="resume-pic-placedate"></p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Spécialisation en Architectures des Systèmes d'Information</h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">2015 — 2017</em></p>
+                            <h3 id="resume-asi-title"></h3>
+                            <p class="info" id="resume-asi-placedate"></p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Cycle préparatoire en école d'ingénieurs</h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">2013 — 2015</em></p>
+                            <h3 id="resume-stpi-title"></h3>
+                            <p class="info" id="resume-stpi-placedate"></p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Baccalauréat S — Mention Très Bien</h3>
-                            <p class="info">Lycée Saint-Joseph, Le Havre (76)<span>&bull;</span> <em class="date">2013</em></p>
-                            <p>Section européenne allemand, spécialité SVT</p>
+                            <h3 id="resume-bac-title"></h3>
+                            <p class="info" id="resume-bac-placedate"></p>
+                            <p id="resume-bac-description"></p>
                         </div>
                     </div> <!-- item end -->
                 </div> <!-- main-col end -->
@@ -179,28 +173,28 @@
             <div class="row education">
 
                 <div class="three columns header-col">
-                    <h1><span>Langues</span></h1>
+                    <h1><span id="language-title"></span></h1>
                 </div>
 
                 <div class="nine columns main-col">
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Anglais C1 — TOEIC Test</h3>
-                            <p class="info">Score : 865<span>&bull;</span> <em class="date"> Décembre 2016</em></p>
+                            <h3 id="language-english-title"></h3>
+                            <p class="info" id="language-english-description"></p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Allemand B2 — Zertifikat Deutsch</h3>
-                            <p class="info">Gœthe-Institut<span>&bull;</span> <em class="date">Juin 2013</em></p>
+                            <h3 id="language-german-title"></h3>
+                            <p class="info" id="language-german-description"></p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Français</h3>
-                            <p class="info"><em class="date">Langue maternelle</em></p>
+                            <h3 id="language-french-title"></h3>
+                            <p class="info" id="language-french-description"></p>
                         </div>
                     </div> <!-- item end -->
                 </div> <!-- main-col end -->
@@ -212,114 +206,87 @@
             <div class="row work">
 
                 <div class="three columns header-col">
-                    <h1><span>Projets</span></h1>
+                    <h1><span id="projects-title"></span></h1>
                 </div>
 
                 <div class="nine columns main-col">
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Refonte de la plateforme web &laquo; Stratow &raquo; pour AEROW Solutions</h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">Jan. 2017 — Jan. 2018</em></p>
-                            <p>
-                                Projet à mi-temps réalisé à l'INSA Rouen-Normandie pour la société AEROW Solutions. En équipe de huit étudiants, ce
-                                projet certifié ISO 9001:2015 a pour objectif de mettre en place le passage de la plateforme web de Gestion Electronique de Documents en MVC (Modèle-Vue-Contrôleur)
-                                par l'utilisation du <em>framework</em> Symfony, ainsi que la refonte complète de l'architecture <em>front-end</em> (grâce au
-                                <em>framework</em> Bootstrap). Le mode de développement employé est le TDD (Développement Dirigé par les Tests) et la méthodologie
-                                de travail est une méthode Agile nommée Scrum. <br>
-                                Durant les 6 premiers mois, mon rôle était Chef de Projet.
+                            <h3 id="projects-pic-title"></h3>
+                            <p class="info" id="projects-pic-info"></p>
+                            <p id="projects-pic-description">
                             </p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Développement d'une application de messagerie instantanée : &laquo; WhatsASI? &raquo; </h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">Jan. 2017 — Avr. 2017</em></p>
-                            <p>
-                                En langage Java 8 et en utilisant la technologie RMI pour un cours d'Informatique Répartie, développement d'une application de messagerie instantanée
-                                permettant à des utilisateurs de discuter depuis des machines différentes. Les utilisateurs peuvent choisir un pseudo, un avatar de profil,
-                                décider dans quelle conversation ils souhaitent discuter. Il est également possible de discuter avec une intelligence artificielle (IA). Enfin, l'utilisateur
-                                peut également sélectionner un certain nombre de mots qu'il souhaite que l'application filtre. <br>
-                                Deux interfaces graphiques sont disponibles : une développée grâce à JavaFX, une autre à utiliser dans un terminal.
+                            <h3 id="projects-whatsasi-title"></h3>
+                            <p class="info" id="projects-whatsasi-info"></p>
+                            <p id="projects-whatsasi-description">
                             </p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Développement d'une application iOS</h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">Sept. 2016 — Jan. 2017</em></p>
-                            <p>
-                                En langage Swift (Cocoa Touch), développer une application pour iPhone, de sorte à pouvoir offrir une aide contextuelle
-                                aux touristes étrangers visitant la France (localisation des points d’intérêts, numéros utiles...).
+                            <h3 id="projects-sostouristes-title"></h3>
+                            <p class="info" id="projects-sostouristes-info"></p>
+                            <p id="projects-sostourists-description">
                             </p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Développement d'un brouilleur d'écran</h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">Sept. 2016</em></p>
-                            <p>
-                                En langage Python et en utilisant la bibliothèque OpenCV, développement d'une application permettant à l'utilisateur d'utiliser
-                                son ordinateur et, dès lors qu'une autre personne apparaît derrière lui, l'image filmée par la webcam est affichée. Ainsi
-                                sur l'image renvoyée, un cadre vert indique le nouveau visage détecté de sorte à ce que l'utilisateur sache qui l'espionne.
-                                <br>
-                                Il existe deux autres modes autres que celui par défaut présenté juste avant : un mode &laquo; zen &raquo; qui affiche une capture d'écran
-                                de code dès qu'une personne tierce apparaît derrière l'écran, et un mode &laquo; ironman &raquo; qui affiche une masque d'IronMan sur toutes
-                                les personnes détectées à la caméra.
+                            <h3 id="projects-brouilleur-title"></h3>
+                            <p class="info" id="projects-brouilleur-info"></p>
+                            <p id="projects-brouilleur-description">
                             </p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Console de jeu portable</h3>
-                            <p class="info">INSA Rouen-Normandie (France - 76)<span>&bull;</span> <em class="date">Jan. 2016 — Mai 2016</em></p>
-                            <p>
-                                Conception complète d'un jeu de casse-brique sur Arduino Mega commandé par un joystick analogique : conception des circuits électroniques,
-                                choix et achat des composants électroniques, conception d'un boitier imprimé en 3D, developpement du jeu de casse-brique en langage Arduino.
+                            <h3 id="projects-console-title"></h3>
+                            <p class="info" id="projects-console-info"></p>
+                            <p id="projects-console-description">
                             </p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Développement d'un mini-jeu d'aventure</h3>
-                            <p class="info">INSA Rouen-Normandie (France - 76)<span>&bull;</span> <em class="date">Oct. 2015 — Jan. 2016</em></p>
-                            <p>
-                                En Java 8, création d'un mini-jeu d'aventure en terminal, qui se joue à 2 personnes. Ce jeu utilise la plupart des fonctionnalités de Java 8.
+                            <h3 id="projects-asiaventure-title"></h3>
+                            <p class="info" id="projects-asiaventure-info"></p>
+                            <p id="projects-asiaventure-description">
                             </p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Développement d'un jeu d'Othello</h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">Oct. 2015 — Jan. 2016</em></p>
-                            <p>
-                                En langage C et en utilisant un cycle en V, mise en place d'un jeu d'Othello disposant d'une intelligence
-                                artificielle (algorithme du Min-Max).
+                            <h3 id="projects-othello-title"></h3>
+                            <p class="info" id="projects-othello-info"></p>
+                            <p id="projects-othello-description">   
                             </p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Conception d'un compilateur personnel bASIc</h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">Oct. 2015 — Jan. 2016</em></p>
-                            <p>
-                                En Lex et Yacc, création d'un compilateur personnel bASIc. Il peut reconnaître des expressions booléennes simples (if - then - else), et gérer les entrées et sorties.
+                            <h3 id="projects-bASIc-title"></h3>
+                            <p class="info" id="projects-bASIc-info"></p>
+                            <p id="projects-bASIc-description">
                             </p>
                         </div>
                     </div> <!-- item end -->
                     <br>
                     <div class="row item">
                         <div class="twelve columns">
-                            <h3>Conception d'un jeu de Memory</h3>
-                            <p class="info">INSA Rouen-Normandie (76)<span>&bull;</span> <em class="date">Oct. 2014 — Jan. 2015</em></p>
-                            <p>
-                                En Pascal et en SDL, création d'un jeu de Memory proposant 3 niveaux de difficultés et un système de classement.
+                            <h3 id="projects-memory-title"></h3>
+                            <p class="info" id="projects-memory-info"></p>
+                            <p id="projects-memory-description">
                             </p>
                         </div>
                     </div> <!-- item end -->
@@ -335,7 +302,7 @@
             <div class="row skill">
 
                 <div class="three columns header-col">
-                    <h1><span>Mes compétences</span></h1>
+                    <h1><span id="skills-myskills"></span></h1>
                 </div>
 
                 <div class="nine columns main-col">
@@ -346,7 +313,7 @@
                             <li><span class="bar-expand c80"></span><em>CSS3</em></li>
                             <li><span class="bar-expand c85"></span><em>JQuery</em></li>
                             <li><span class="bar-expand c70"></span><em>Struts</em></li>
-                            <li><span class="bar-expand c75"></span><em>J2EE</em></li>
+                            <li><span class="bar-expand c75"></span><em>Java EE</em></li>
                             <li><span class="bar-expand c80"></span><em>RMI</em></li>
                             <li><span class="bar-expand c75"></span><em>Servlets</em></li>
                             <li><span class="bar-expand c70"></span><em>XML</em></li>
@@ -363,11 +330,11 @@
                             <li><span class="bar-expand c80"></span><em>Microsoft Office</em></li>
                             <li><span class="bar-expand c95"></span><em>Linux (Ubuntu)</em></li>
                             <li><span class="bar-expand c95"></span><em>Mac OS X</em></li>
-                            <li><span class="bar-expand c90"></span><em>Technologies Web</em></li>
-                            <li><span class="bar-expand c80"></span><em>Développement logiciel</em></li>
-                            <li><span class="bar-expand c85"></span><em>Gestion de projet</em></li>
-                            <li><span class="bar-expand c85"></span><em>Anglais</em></li>
-                            <li><span class="bar-expand c80"></span><em>Allemand</em></li>
+                            <li><span class="bar-expand c90"></span><em id="skills-technoweb"></em></li>
+                            <li><span class="bar-expand c80"></span><em id="skills-software-dvp"></em></li>
+                            <li><span class="bar-expand c85"></span><em id="skills-project-management"></em></li>
+                            <li><span class="bar-expand c85"></span><em id="skills-english">Anglais</em></li>
+                            <li><span class="bar-expand c80"></span><em id="skills-german">Allemand</em></li>
                         </ul>
                     </div><!-- end skill-bars -->
                 </div> <!-- main-col end -->
@@ -381,7 +348,7 @@
             <div class="row">
                 <div class="twelve columns collapsed">
 
-                    <h1>Voici quelques uns des projets sur lesquels j'ai travaillé.</h1>
+                    <h1 id="portfolio-introduction"></h1>
 
                     <!-- portfolio-wrapper -->
                     <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -407,8 +374,8 @@
                                 <img alt="" src="images/ir_whatsasi_gray.png">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>WhatsASI?</h5>
-                                        <p>Application de messagerie instantanée : &laquo; WhatsASI? &raquo;</p>
+                                        <h5 id="portfolio-whatsasi-title"></h5>
+                                        <p id="portfolio-whatsasi-subtitle"></p>
                                     </div>
                                 </div>
                                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -422,8 +389,8 @@
                                 <img alt="" src="images/ios2.png">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>Développement d'une application iOS</h5>
-                                        <p>Application iOS : SOSTouriste</p>
+                                        <h5 id="portfolio-sostouriste-title"></h5>
+                                        <p id="portfolio-sostouriste-subtitle"></p>
                                     </div>
                                 </div>
                                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -437,8 +404,8 @@
                                 <img alt="" src="images/sosi_brouilleur.png">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>Brouilleur d'écran</h5>
-                                        <p>Développement d'un brouilleur d'écran</p>
+                                        <h5 id="portfolio-brouilleur-title"></h5>
+                                        <p id="portfolio-brouilleur-subtitle"></p>
                                     </div>
                                 </div>
                                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -452,8 +419,8 @@
                                 <img alt="" src="images/asiaventure.png">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>Jeu ASIAventure</h5>
-                                        <p>Création d'un mini-jeu d'aventure</p>
+                                        <h5 id="portfolio-asiaventure-title"></h5>
+                                        <p id="portfolio-asiaventure-subtitle"></p>
                                     </div>
                                 </div>
                                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -467,8 +434,8 @@
                                 <img alt="" src="images/othello.png">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>Othello</h5>
-                                        <p>Développement d'un jeu d'Othello</p>
+                                        <h5 id="portfolio-othello-title"></h5>
+                                        <p id="portfolio-othello-subtitle"></p>
                                     </div>
                                 </div>
                                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -482,8 +449,8 @@
                                 <img alt="" src="images/elec2_gray.png">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>Console de jeu portable</h5>
-                                        <p>Conception complète d'un jeu de casse-brique</p>
+                                        <h5 id="portfolio-console-title"></h5>
+                                        <p id="portfolio-console-subtitle"></p>
                                     </div>
                                 </div>
                                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -497,8 +464,8 @@
                                 <img alt="" src="images/compil.png">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>Compilateur bASIc</h5>
-                                        <p>Création d'un compilateur personnel simple</p>
+                                        <h5 id="portfolio-bASIc-title"></h5>
+                                        <p id="portfolio-bASIc-subtitle"></p>
                                     </div>
                                 </div>
                                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -512,8 +479,8 @@
                                 <img alt="" src="images/memory.png">
                                 <div class="overlay">
                                     <div class="portfolio-item-meta">
-                                        <h5>Jeu de Memory</h5>
-                                        <p>Création d'un jeu de Memory</p>
+                                        <h5 id="portfolio-memory-title"></h5>
+                                        <p id="portfolio-memory-subtitle"></p>
                                     </div>
                                 </div>
                                 <div class="link-icon"><i class="icon-plus"></i></div>
@@ -552,38 +519,26 @@
                     <img class="scale-with-grid" src="images/ir_whatsasi_connexion.png" alt="" />
                     <img class="scale-with-grid" src="images/ir_whatsasi_filtres.png" alt="" />
                     <div class="description-box">
-                        <h4>Application de messagerie instantanée : &laquo; WhatASI? &raquo;</h4>
-                        <p>
-                            En langage Java 8 et en utilisant la technologie RMI pour un cours d'Informatique Répartie, développement d'une application de messagerie instantanée
-                            permettant à des utilisateurs de discuter depuis des machines différentes. Les utilisateurs peuvent choisir un pseudo, un avatar de profil,
-                            décider dans quelle conversation ils souhaitent discuter. Il est également possible de discuter avec une intelligence artificielle (IA). Enfin, l'utilisateur
-                            peut également sélectionner un certain nombre de mots qu'il souhaite que l'application filtre. <br>
-                            Deux interfaces graphiques sont disponibles : une développée grâce à JavaFX, une autre à utiliser dans un terminal.
+                        <h4 id="modal-whatsasi-title"></h4>
+                        <p id="modal-whatsasi-description">
                         </p>
-                        <span class="categories"><i class="fa fa-tag"></i>Développement, Informatique répartie, Java8, JavaFX, IA, Messagerie</span>
+                        <span class="categories"><i class="fa fa-tag"></i><span id="modal-whatsasi-tags"></span></span>
                     </div>
                     <div class="link-box">
-                        <a class="popup-modal-dismiss">Fermer</a>
+                        <a class="popup-modal-dismiss" id="modal-whatsasi-close"></a>
                     </div>
                 </div><!-- modal-08 End -->
 
                 <div id="modal-09" class="popup-modal mfp-hide">
                     <img class="scale-with-grid" src="images/sosi_brouilleur.png" alt="" />
                     <div class="description-box">
-                        <h4>Brouilleur d'écran</h4>
-                        <p>
-                            En langage Python et en utilisant la bibliothèque OpenCV, développement d'une application permettant à l'utilisateur d'utiliser
-                            son ordinateur et, dès lors qu'une autre personne apparaît derrière lui, l'image filmée par la webcam est affichée. Ainsi
-                            sur l'image renvoyée, un cadre vert indique le nouveau visage détecté de sorte à ce que l'utilisateur sache qui l'espionne.
-                            <br>
-                            Il existe deux autres modes autres que celui par défaut présenté juste avant : un mode &laquo; zen &raquo; qui affiche une capture d'écran
-                            de code dès qu'une personne tierce apparaît derrière l'écran, et un mode &laquo; ironman &raquo; qui affiche une masque d'IronMan sur toutes
-                            les personnes détectées à la caméra.
+                        <h4 id="modal-brouilleur-title"></h4>
+                        <p id="modal-brouilleur-description">
                         </p>
-                        <span class="categories"><i class="fa fa-tag"></i>Développement, OpenCV, Python, Brouilleur</span>
+                        <span class="categories"><i class="fa fa-tag"></i><span id="modal-brouilleur-tags"></span></span>
                     </div>
                     <div class="link-box">
-                        <a class="popup-modal-dismiss">Fermer</a>
+                        <a class="popup-modal-dismiss" id="modal-brouilleur-close"></a>
                     </div>
                 </div><!-- modal-09 End -->
 
@@ -591,15 +546,13 @@
                 <div id="modal-01" class="popup-modal mfp-hide">
                     <img class="scale-with-grid" src="images/othello.png" alt="" />
                     <div class="description-box">
-                        <h4>Jeu d'Othello</h4>
-                        <p>
-                            En langage C et en utilisant un cycle en V, mise en place d'un jeu d'Othello disposant d'une intelligence
-                            artificielle (algorithme du Min-Max).
+                        <h4 id="modal-othello-title"></h4>
+                        <p id="modal-othello-description">
                         </p>
-                        <span class="categories"><i class="fa fa-tag"></i>Développement, Intelligence Artificielle, C, Cycle en V</span>
+                        <span class="categories"><i class="fa fa-tag"></i><span id="modal-othello-tags"></span></span>
                     </div>
                     <div class="link-box">
-                        <a class="popup-modal-dismiss">Fermer</a>
+                        <a class="popup-modal-dismiss" id="modal-othello-close"></a>
                     </div>
                 </div><!-- modal-01 End -->
 
@@ -607,17 +560,13 @@
                     <img class="scale-with-grid"  src="images/elec2.png" alt="" />
                     <img class="scale-with-grid"  src="images/elec_petit.png" alt="" />
                     <div class="description-box">
-                        <h4>Console de jeu portable</h4>
-                        <p>
-                            Conception complète d'un jeu de casse-brique sur Arduino Mega commandé par un joystick analogique
-                            : conception des circuits électroniques,
-                            choix et achat des composants électroniques, conception d'un boitier imprimé en 3D, developpement
-                            du jeu de casse-brique en langage Arduino.
+                        <h4 id="modal-console-title"></h4>
+                        <p id="modal-console-description">
                         </p>
-                        <span class="categories"><i class="fa fa-tag"></i>Électronique, Arduino, 3D</span>
+                        <span class="categories"><i class="fa fa-tag"></i><span id="modal-console-tags"></span></span>
                     </div>
                     <div class="link-box">
-                        <a class="popup-modal-dismiss">Fermer</a>
+                        <a class="popup-modal-dismiss" id="modal-console-close"></a>
                     </div>
                 </div><!-- modal-02 End -->
 
@@ -625,57 +574,52 @@
                     <img class="scale-with-grid" src="images/ios.png" alt="" />
                     <img class="scale-with-grid" src="images/ios_montage.png" alt="" />
                     <div class="description-box">
-                        <h4>Développement d'une application iOS</h4>
-                        <p>
-                            En langage Swift (Cocoa Touch), développer une application pour iPhone, de sorte à pouvoir offrir une aide contextuelle
-                            aux touristes étrangers visitant la France (localisation des points d’intérêts, numéros utiles...).
+                        <h4 "modal-sostouriste-title"></h4>
+                        <p id="modal-sostouriste-description">
                         </p>
-                        <span class="categories"><i class="fa fa-tag"></i>Swift, iOS, Développement</span>
+                        <span class="categories"><i class="fa fa-tag"></i><span id="modal-sostouriste-tags"></span></span>
                     </div>
                     <div class="link-box">
-                        <a class="popup-modal-dismiss">Fermer</a>
+                        <a class="popup-modal-dismiss" id="modal-sostouriste-close"></a>
                     </div>
                 </div> <!-- modal-03 End -->
 
                 <div id="modal-04" class="popup-modal mfp-hide">
                     <img class="scale-with-grid" src="images/asiaventure.png" alt="" />
                     <div class="description-box">
-                        <h4>Jeu ASIAventure</h4>
-                        <p>
-                            En Java 8, création d'un mini-jeu d'aventure en terminal, qui se joue à 2 personnes. Ce jeu utilise la plupart des fonctionnalités de Java 8.
+                        <h4 id="modal-asiaventure-title"></h4>
+                        <p id="modal-asiaventure-description">
                         </p>
-                        <span class="categories"><i class="fa fa-tag"></i>Java 8, Développement</span>
+                        <span class="categories"><i class="fa fa-tag"></i><span id="modal-asiaventure-tags"></span></span>
                     </div>
                     <div class="link-box">
-                        <a class="popup-modal-dismiss">Fermer</a>
+                        <a class="popup-modal-dismiss" id="modal-asiaventure-close"></a>
                     </div>
                 </div> <!-- modal-04 End -->
 
                 <div id="modal-05" class="popup-modal mfp-hide">
                     <img class="scale-with-grid" src="images/compil.png" alt="" />
                     <div class="description-box">
-                        <h4>Compilateur bASIc</h4>
-                        <p>
-                            En Lex et Yacc, création d'un compilateur personnel bASIc. Il peut reconnaître des expressions booléennes simples (if - then - else), et gérer les entrées et sorties.
+                        <h4 id="modal-bASIc-title"></h4>
+                        <p id="modal-bASIc-description">
                         </p>
-                        <span class="categories"><i class="fa fa-tag"></i>Lex, Yacc, Compilateur, Développement</span>
+                        <span class="categories"><i class="fa fa-tag"></i><span id="modal-bASIc-tags"></span></span>
                     </div>
                     <div class="link-box">
-                        <a class="popup-modal-dismiss">Fermer</a>
+                        <a class="popup-modal-dismiss" id="modal-bASIc-close"></a>
                     </div>
                 </div> <!-- modal-05 End -->
 
                 <div id="modal-06" class="popup-modal mfp-hide">
                     <img class="scale-with-grid" src="images/memory.png" alt="" />
                     <div class="description-box">
-                        <h4>Jeu de Memory</h4>
-                        <p>
-                            En Pascal et en SDL, création d'un jeu de Memory proposant 3 niveaux de difficultés et un système de classement.
+                        <h4 id="modal-memory-title"></h4>
+                        <p id="modal-memory-description">
                         </p>
-                        <span class="categories"><i class="fa fa-tag"></i>Pascal, SDL, Développement</span>
+                        <span class="categories"><i class="fa fa-tag"></i><span id="modal-memory-tags"></span></span>
                     </div>
                     <div class="link-box">
-                        <a class="popup-modal-dismiss">Fermer</a>
+                        <a class="popup-modal-dismiss" id="modal-memory-close"></a>
                     </div>
                 </div> <!-- modal-06 End -->
             </div>
@@ -715,7 +659,7 @@
                 <div class="row">
 
                     <div class="two columns header-col">
-                        <h1><span>Citations</span></h1>
+                        <h1><span id="quotes-title"></span></h1>
                     </div>
 
                     <div class="ten columns flex-container">
@@ -723,38 +667,33 @@
                             <ul class="slides">
                                 <li>
                                     <blockquote>
-                                    <p>
-                                        Choisissez un travail que vous aimez et vous n'aurez pas à travailler un seul jour de votre vie.
+                                    <p id="quotes-confucius-text">
                                     </p>
-                                    <cite>Confucius</cite>
+                                    <cite id="quotes-confucius"></cite>
                                     </blockquote>
                                 </li> <!-- slide ends -->
 
                                 <li>
                                     <blockquote>
-                                    <p>
-                                        Tout obstacle renforce la détermination. Celui qui s'est fixé un but n'en change pas.
+                                    <p id="quotes-davinci-text">
                                     </p>
-                                    <cite>Léonard de Vinci</cite>
+                                    <cite id="quotes-davinci"></cite>
                                     </blockquote>
                                 </li> <!-- slide ends -->
 
                                 <li>
                                     <blockquote>
-                                    <p>
-                                        La théorie, c'est quand on sait tout et que rien ne fonctionne. La pratique, c'est quand tout
-                                        fonctionne et que personne ne sait pourquoi.
+                                    <p id="quotes-einstein-text">
                                     </p>
-                                    <cite>Albert Einstein</cite>
+                                    <cite id="quotes-einstein"></cite>
                                     </blockquote>
                                 </li> <!-- slide ends -->
 
                                 <li>
                                     <blockquote>
-                                    <p>
-                                        Dans la vie, rien n'est à craindre... Tout est à comprendre.
+                                    <p id="quotes-curie-text">
                                     </p>
-                                    <cite>Marie Curie</cite>
+                                    <cite id="quotes-curie"></cite>
                                     </blockquote>
                                 </li> <!-- slide ends -->
                             </ul>
@@ -776,8 +715,8 @@
                     </ul>
 
                     <ul class="copyright">
-                        <li style="font-size:8px;">&copy; Copyright 2014 CeeVee</li>
-                        <li style="font-size:8px;">Conçu par <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>
+                        <li style="font-size:8px;" id="footer-copyright"></li>
+                        <li style="font-size:8px;" id="footer-designed-by"></li>
                     </ul>
                 </div>
                 <div id="go-top"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
@@ -794,6 +733,7 @@
         <script src="js/jquery.fittext.js"></script>
         <script src="js/magnific-popup.js"></script>
         <script src="js/init.js"></script>
+        <script src="js/translator.js"></script>        
     </body>
 
 </html>
