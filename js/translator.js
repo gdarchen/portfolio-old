@@ -8,5 +8,18 @@ function translate(language) {
 }
 
 $( document ).ready(function() {
-    translate("french");    
+    translate("french");
+
+    $("#translate-french").on('click touchstart', function(){
+        translate("french");
+    });    
+
+    $("#translate-english").on('click touchstart', function(){
+        translate("english");
+    }); 
+
+    $("#translate-german").on('click touchstart', function(){
+        translate("german");
+    }); 
 });
+
